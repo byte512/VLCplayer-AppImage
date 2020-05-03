@@ -52,6 +52,14 @@ apt-get --yes install curl build-essential autoconf  libxcb-image0-dev libxcb-im
 
 )
 
+(
+# libdvdread
+  git clone https://code.videolan.org/videolan/libdvdread.git
+  cd libdvdread
+  ./configure  --prefix=/usr .
+  make -j$(nproc)
+  make -j$(nproc) install
+)
 
 (
   wget http://download.videolan.org/pub/vlc/$VERSION/vlc-$VERSION.tar.xz
