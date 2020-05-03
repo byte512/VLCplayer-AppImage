@@ -1,6 +1,6 @@
 #/bin/bash
-
-VERSION="3.0.10"
+export VERSION="3.0.10"
+#VERSION="3.0.10"
 
 #echo "deb http://in.archive.ubuntu.com/ubuntu/ xenial main" | tee /etc/apt/sources.list.d/xenial.list
 apt-get update
