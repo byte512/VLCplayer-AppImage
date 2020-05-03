@@ -1,7 +1,7 @@
 #/bin/bash
 
 export VERSION="3.0.10"
-export DVDREAD_VERSION="5.0.3-1"
+export DVDREAD_VERSION=6
 
 #echo "deb http://in.archive.ubuntu.com/ubuntu/ xenial main" | tee /etc/apt/sources.list.d/xenial.list
 apt-get update
