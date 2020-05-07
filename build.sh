@@ -56,7 +56,7 @@ apt-get --yes install curl build-essential autoconf  libxcb-image0-dev libxcb-im
 
   LIBDVDREAD_VERSION="6.1.1"
   wget https://get.videolan.org/libdvdread/$LIBDVDREAD_VERSION/libdvdread-$LIBDVDREAD_VERSION.tar.bz2
-  tar -xvjf  libdvdread-LIBDVDREAD_VERSION.tar.bz2
+  tar -xvjf  libdvdread-$LIBDVDREAD_VERSION.tar.bz2
   cd libdvdread-$LIBDVDREAD_VERSION
   ./configure  --prefix=/usr --docdir=/usr/share/doc/libdvdread-$LIBDVDREAD_VERSION --enable-static
   make -j$(nproc)
