@@ -1,8 +1,8 @@
 #/bin/bash
 
 export VERSION="3.0.10"
-export DVDREAD_VERSION_CODE="6.1.0"
-export DVDNAV_VERSION_CODE="6.1.0"
+export DVDREAD_VERSION_CODE="/usr/share/doc/libdvdread-6.1.1"
+export DVDNAV_VERSION_CODE="/usr/share/doc/libdvdnav-6.1.0"
 
 #echo "deb http://in.archive.ubuntu.com/ubuntu/ xenial main" | tee /etc/apt/sources.list.d/xenial.list
 apt-get update
