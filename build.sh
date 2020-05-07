@@ -54,11 +54,11 @@ apt-get --yes install curl build-essential autoconf  libxcb-image0-dev libxcb-im
 
 (
 
-# libdvdread
-  wget https://get.videolan.org/libdvdread/6.1.1/libdvdread-6.1.1.tar.bz2
-  tar -xvjf  libdvdread-6.1.1.tar.bz2
-  cd libdvdread-6.1.1
-  ./configure  --prefix=/usr --docdir=/usr/share/doc/libdvdread-6.1.1 --enable-static
+  LIBDVDREAD_VERSION="6.1.1"
+  wget https://get.videolan.org/libdvdread/$LIBDVDREAD_VERSION/libdvdread-$LIBDVDREAD_VERSION.tar.bz2
+  tar -xvjf  libdvdread-LIBDVDREAD_VERSION.tar.bz2
+  cd libdvdread-$LIBDVDREAD_VERSION
+  ./configure  --prefix=/usr --docdir=/usr/share/doc/libdvdread-$LIBDVDREAD_VERSION --enable-static
   make -j$(nproc)
   make -j$(nproc) install
   
@@ -66,10 +66,10 @@ apt-get --yes install curl build-essential autoconf  libxcb-image0-dev libxcb-im
 
 (
 
-# libdvdnav
-  wget https://get.videolan.org/libdvdnav/6.1.0/libdvdnav-6.1.0.tar.bz2
-  tar -xvjf  libdvdnav-6.1.0.tar.bz2
-  cd libdvdnav-6.1.0
+  LIBDVDNAV_VERSION="6.1.0"
+  wget https://get.videolan.org/libdvdnav/$LIBDVDNAV_VERSION/libdvdnav-$LIBDVDNAV_VERSION.tar.bz2
+  tar -xvjf  libdvdnav-$LIBDVDNAV_VERSION.tar.bz2
+  cd libdvdnav-$LIBDVDNAV_VERSION
   ./configure  --prefix=/usr --docdir=/usr/share/doc/libdvdnav-doc --enable-static --disable-silent-rules
   make -j$(nproc)
   make -j$(nproc) install
