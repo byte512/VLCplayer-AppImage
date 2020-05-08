@@ -50,7 +50,7 @@ apt-get --yes install curl build-essential autoconf  libxcb-image0-dev libxcb-im
  make -j$(nproc)
  make -j$(nproc) install
 
-)
+)  
 
 (
 
@@ -71,6 +71,18 @@ apt-get --yes install curl build-essential autoconf  libxcb-image0-dev libxcb-im
   tar -xvjf  libdvdnav-$LIBDVDNAV_VERSION.tar.bz2
   cd libdvdnav-$LIBDVDNAV_VERSION
   ./configure  --prefix=/usr --docdir=/usr/share/doc/libdvdnav-doc --enable-static --disable-silent-rules
+  make -j$(nproc)
+  make -j$(nproc) install
+  
+)
+
+(
+
+  LIBDVDCSS_VERSION="1.4.2"
+  wget https://download.videolan.org/pub/libdvdcss/last/libdvdcss-$LIBDVDCSS_VERSION.tar.bz2
+  tar -xvjf libdvdcss-$LIBDVDCSS_VERSION.tar.bz2
+  cd libdvdcss-$LIBDVDCSS_VERSION
+  ./configure --prefix=/usr
   make -j$(nproc)
   make -j$(nproc) install
   
