@@ -19,7 +19,7 @@ This AppImage has been tested on the following GNU / Linux distros.
 * #### OpenSUSE-Leap 15.1 KDE Live-x86_64
 * #### Ubuntu xenial 16.04
 * #### Ubuntu Bionic 18.04
-* #### Ubuntu Disco 19.04
+* #### Ubuntu Focal  20.04
 * #### Linuxmint 19.2 cinnamon-64bit
 * #### Manjaro-xfce 18.1.0 stable-x86_64/18.1.2-linux53
 * #### Mageia 7.1 Live-Plasma-x86_64
