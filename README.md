@@ -1,7 +1,7 @@
 # VLCplayer-AppImage
 ![VLC](https://user-images.githubusercontent.com/581999/41001881-e33ecc94-691a-11e8-8974-5fcdfcb42f89.jpg)
 
-Unofficial VLCplayer AppImage, VLC version (3.0.11) build from source.
+Unofficial VLCplayer AppImage, VLC version (3.0.11.1) build from source.
 
 ## Why?
 AppImage is a format for distributing portable software on Linux without needing superuser permissions to install the application  It tries also to allow Linux distribution-agnostic binary software deployment for application developers, also called Upstream packaging. Released first in 2004 under the name klik, it was continuously developed, then renamed in 2011 to PortableLinuxApps and later in 2013 to AppImage. [wikipedia](https://en.wikipedia.org/wiki/AppImage)
@@ -47,7 +47,8 @@ This AppImage has been tested on the following GNU / Linux distros.
 ## features not activated
 #### In the process of building Appimage it was not possible to integrate the following features
 * chromecast:"protobuf" bug in gnutls-bin, preventing it from working correctly (during the build the binary was segfaulting)on Ubuntu xenial https://trac.videolan.org/vlc/ticket/18329
-* srt  in version of vlc appimage "3.0.11"
+* aom: dav1d support enabled
+* srt  in version of vlc appimage "3.0.11.1"
 * crystalhd: unusble without firmware (#934242)
 * d3d11va: Windows only
 * decklink: not in Debian/Ubuntu xenial
