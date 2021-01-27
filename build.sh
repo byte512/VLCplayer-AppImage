@@ -1,6 +1,6 @@
 #/bin/bash
 
-export VERSION="3.0.11.1"
+export VERSION="3.0.12"
 
 
 apt-get update
